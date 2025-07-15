@@ -1,3 +1,15 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const nameElement = document.getElementById("user-name");
+    const storedName = localStorage.getItem("username");
+
+    if (storedName) {
+        nameElement.textContent = storedName;
+       // localStorage.removeItem("username"); // Show once
+    } else {
+        nameElement.textContent = "مجتبى";
+    }
+});
+
 // Modal functionality for gallery images with dynamic overlay color
     const modal = document.getElementById("imgModal");
     const modalImg = document.getElementById("modalImg");
