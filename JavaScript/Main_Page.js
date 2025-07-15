@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (storedName) {
         nameElement.textContent = storedName;
-        localStorage.removeItem("username"); // Show once
+       // localStorage.removeItem("username"); // Show once
     } else {
         nameElement.textContent = "مجتبى";
     }
