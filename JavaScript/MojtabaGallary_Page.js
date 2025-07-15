@@ -1,3 +1,15 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const nameElement = document.getElementById("user-name");
+    const storedName = localStorage.getItem("username");
+
+    if (storedName) {
+        nameElement.textContent = storedName;
+       // localStorage.removeItem("username"); // Show once
+    } else {
+        nameElement.textContent = "مجتبى";
+    }
+});
+
 const modalImages = [
       {src: '../Logos/Mojtaba/بحر/photo_2025-06-02_02-26-33.jpg', caption: 'صورة 1'},
       {src: '../Logos/Mojtaba/بحر/photo_2025-06-02_02-26-37.jpg', caption: 'صورة 2'},
