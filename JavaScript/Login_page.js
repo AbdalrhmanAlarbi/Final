@@ -66,7 +66,7 @@ function validateLoginForm(e) {
         });
         return false;
     }
-
+    localStorage.setItem("username", "مجتبى");
     // Redirect on successful login
     window.location.href = "HTML/ChooseRole_Page.html";
     return false;
